@@ -1,0 +1,139 @@
+#a{
+    color: rgb(255, 255, 255);
+}
+#a:hover{
+    color: rgb(255, 0, 0);
+    text-decoration: dotted;
+}
+#dito{
+    color: rgb(255, 255, 255);
+}
+#dito:hover{
+    color: red;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    transition: background-color .5s;
+  }
+  
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+    margin-top: 0px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  .wrapper {
+    font-family: sans-serif;
+    width: 80%;
+    position: relative;
+    }
+    img {
+    display: block;
+    width: 100%;
+    height: auto;
+    }
+    .content {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 60px;
+    }
+    .content span{
+    font-size: 24px;
+    display: block
+    }
+    .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #7bff00c9;
+    }
+    .wrapper:hover .overlay {
+    opacity: 1;
+    }
+    .movie-item__label {
+        position: absolute;
+        z-index: 5;
+        left: 50%;
+        top: 0;
+        background-color: black;
+        color: yellow;
+        padding: 8px 15px;
+        font-size: 1.1rem;
+        font-weight: 600;
+        border-radius: 0 0 6px 6px;
+        transform: translateX(-50%);
+    }
+
+
+
+    .floating-text {
+      background-color: #0e1538;
+      border-radius: 10px 10px 0 0;
+      color: #fff;
+      font-family: 'Muli';
+      padding: 7px 15px
+  ;
+      position: fixed;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      z-index: 998;
+  }

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="text1.css">
+    <title>Cristmast-Film.com - enjoy Cristmast-Films</title>
+    <link rel="icon" type="image/gif/png"
+        href="https://asset.swarovski.com/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_3.0,f_auto,w_500/5539365_png/santa-claus-with-gift-bag-swarovski-5539365.png">
+
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body style="background-color: grey;">
+
+    <div id="main" style=" background-color: black; color: white; width: 100%;">
+        <span style="font-size:30px;cursor:pointer; background-color: black; color: white;" onclick="openNav()">&#9776;
+        </span>
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+            document.body.style.backgroundColor = "white";
+        }</script>
+
+
+
+
+    <br>
+    <hr><br>
+
+    <div id="firstDiv" class="flex-container">
+        
+    </div>
+    <br>
+    <script>
+        const animes = [
+
+            { name: '<p><b><a href="default.asp" target="_blank" style="color: white;">Midoria Izuko</a></b></p>', img: 'https://i.pinimg.com/originals/b1/44/31/b144315309ffbf4efc84fb4cb5916fe2.jpg' },
+            { name: '<a href="day 10.html" style="color: white;">katasuki bakugo</a>', img: 'https://pbs.twimg.com/profile_images/1280104306964865024/r3oJsfr1_400x400.jpg' },
+            { name: '<a href="day 11.html" style="color: white;">shoto todoroki</a>', img: 'https://i.pinimg.com/originals/50/b2/b1/50b2b181190e93bd8a840036df9bf18d.png' },
+            { name: '<a href="day 12.html" style="color: white;">Momo Yaoyorozu</a>', img: 'https://i.pinimg.com/736x/fa/bb/13/fabb13eb7a2d21ba70d2fa22d7b6b0cc.jpg' },
+            { name: '<a href="day 13.html" style="color: white;">ochaco uraraka</a>', img: 'https://i.pinimg.com/originals/a2/74/b4/a274b47e5ae5c3606695e2d76205d416.jpg' },
+            { name: '<a href="day 14.html" style="color: white;"Himiko Toga</a>', img: 'https://i.pinimg.com/originals/30/f8/5d/30f85d00beca792d5b83e1659793ca1f.jpg' },
+            { name: '<a href="day 15.html" style="color: white;">eijiro kirishima</a>', img: 'https://i.pinimg.com/originals/0b/e1/e6/0be1e6d02681c185bf2267e08cb5e13d.jpg' },
+            { name: '<a href="day 16.html" style="color: white;">Shota aizava</a>', img: 'https://i.pinimg.com/originals/53/1a/c7/531ac7a86c460ab31d3828709bc8ba9d.jpg' },
+            { name: '<a href="day 17.html" style="color: white;">Minoru Mineta</a>', img: 'https://i.pinimg.com/originals/a0/1a/b6/a01ab6354750d4c81498dd3ce9ff3443.jpg' },
+            { name: '<a href="day 18.html" style="color: white;">kyouka Jirou</a>', img: 'https://pbs.twimg.com/profile_images/1343025303636086785/kFQlADSH_400x400.jpg' },
+            { name: '<a href="day 19.html" style="color: white;">dabi</a>', img: 'https://64.media.tumblr.com/fcdbd36defd5756b0c990abedf208fe2/ea1936cdf0772257-ae/s400x600/fc643d1f8493f67395e7699f3fd64f5b4bed8c5e.png' },
+            { name: '<a href="day 20.html" style="color: white;">denki Kaminari</a>', img: 'https://i.pinimg.com/originals/2d/c5/a3/2dc5a345737e0e83244502247a4dea2b.jpg' },
+            { name: '<a href="day 21.html" style="color: white;"> Eri</a>', img: 'https://cdn141.picsart.com/315312496008211.png?type=webp color: white;to=min color: white;r=640' },
+            { name: '<a href="day 22.html" style="color: white;">Tomura Shigaraki</a>', img: 'https://i.pinimg.com/736x/0f/ef/c8/0fefc8cf7e6c6c766a2d8791386037d4.jpg' },
+            { name: '<a href="day 23.html" style="color: white;">tenya lida</a>', img: 'https://pbs.twimg.com/profile_images/1287914381355954186/a11Us1S1.jpg' },
+            { name: '<a href="day 24.html" style="color: white;">Fumikage Tokoyami</a>', img: 'https://ih1.redbubble.net/image.617303805.2628/flat,800x800,075,f.u1.jpg' },
+            { name: '<a href="day 25.html" style="color: white;"> Enji Todoroki(Endeavor)</a>', img: 'https://pbs.twimg.com/profile_images/1308292792045584384/R7HEVAcl_400x400.jpg' },
+            { name: '<a href="day 26.html" style="color: white;">Hitoshi Shinso</a>', img: 'https://i.quotev.com/img/q/u/19/11/15/d3lxum32yy.jpg/' },
+            { name: '<a href="day 27.html" style="color: white;">Toru Nagakure</a>', img: 'https://pbs.twimg.com/media/DN_LLDSWAAAcian.jpg' },
+            { name: '<a href="day 28.html" style="color: white;">Mina Ashido</a>', img: 'https://64.media.tumblr.com/34e564d211766a5908c9dfc07ee837fb/tumblr_otx1wc6O2v1vy2tgqo2_400.jpg' },
+            { name: '<a href="day 29.html" style="color: white;">Hanta Sero</a>', img: 'https://static.wikia.nocookie.net/bokunoheroacademia/images/b/b3/Hanta_Sero_Hero_Costume_Anime_Action.png/revision/latest?cb=20200107060935 color: white;path-prefix=es' },
+            { name: '<a href="day 30.html" style="color: white;">Yuga Aoyama</a>', img: 'https://wallpaperaccess.com/full/4346317.png' },
+            { name: '<a href="day 31.html" &color: white;">All Might</a>', img: 'https://i.pinimg.com/736x/7e/a1/d3/7ea1d311a90d8b81c8cf7e2ec074cec3.jpg' },
+        ]
+
+        for (anime of animes) {
+            console.log(anime);
+            var containerDiv = document.createElement('div');
+
+            var imageElement = document.createElement('img');
+            imageElement.src = anime.img;
+
+            var italicElement = document.createElement('i');
+            italicElement.innerHTML = anime.name;
+            var h6Element = document.createElement('h6');
+            h6Element.appendChild(italicElement);
+
+            containerDiv.appendChild(imageElement);
+            containerDiv.appendChild(h6Element);
+
+            document.getElementById('firstDiv').appendChild(containerDiv);
+        }
+    </script>
+
+</body>
+
+</html>
